@@ -1,0 +1,21 @@
+.img{
+    position: relative; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./backiee-57694.jpg");
+}
+.ln{
+    widows: 20px;
+    height: 310px;
+    /* background: rgba(0,0,0,0.5 ); */
+    color: rgb(252, 252, 252);
+    top: 100px;
+    bottom:10px;
+    left: -30%;
+    width: 300px;
+   
+    position: absolute;
+    
+    box-sizing: border-box;
+ }

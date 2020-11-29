@@ -1,0 +1,28 @@
+<div class="img" style="height: 570px;">
+        <div class="col-md-3 offset-md-3   mt-6">
+            <form #loginForm="ngForm" (ngSubmit)="printForm(loginForm)">
+                    <div class=ln>
+                <h1>Manager Login</h1>
+        
+                <div class="form-group">
+                    <label for="userid"><i class="fa fa-fw fa-user"></i>Enter UserId :</label>
+                    <input type="number" #userid="ngModel" ngModel name="userid" id="userid" class="form-control" required placeholder="enter userid">
+                    <div *ngIf="userid.touched && userid.invalid" >
+                            <p class="alert alert-danger" > *This field is required</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="userpassword"><i class="fa fa-fw fa-key"></i>Enter userpassword :</label>
+                    <input type="password" #userpassword="ngModel" ngModel name="userpassword" id="userpassword" class="form-control"
+                        required placeholder="enter password">
+                    <div *ngIf="userpassword.touched && userpassword.invalid" >
+                            <p class="alert alert-danger" > This field is required</p>
+                    </div>
+                </div>
+               
+                    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login </button>
+                    </div>
+               </form>
+               </div>
+             
+            </div>
